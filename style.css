@@ -1,0 +1,81 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+button {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px; /* Ajustar altura para mejor visualización */
+    background-color: rgb(86, 253, 86);
+    color: white;
+    border: none; /* Eliminar borde */
+    border-radius: 10px;
+    cursor: pointer; /* Añadir cursor pointer para indicar interactividad */
+    font-size: 18px; /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+button:hover {
+    background-color: rgb(54, 168, 54);
+}
+
+#resultado {
+    background-color: rgb(64, 134, 255);
+}
+
+#borrar {
+    background-color: rgb(255, 57, 57);
+}
+
+#resultado:hover {
+    background-color: rgb(49, 101, 190);
+}
+
+#borrar:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 254, 252);
+    border-radius: 10px;
+    padding: 20px; /* Añadir padding para mejor espaciado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    height: auto; /* Ajustar la altura al contenido */
+    width: 300px; /* Ajustar el ancho */
+    margin: 20px; /* Añadir margen alrededor */
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos dentro de la calculadora */
+}
+
+#label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#inputcalc {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cambiar a 2 columnas */
+    gap: 10px;
+}
